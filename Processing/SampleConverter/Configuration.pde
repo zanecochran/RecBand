@@ -10,3 +10,14 @@ String[] gestures = {"Texting", "Nothing"};   // List of Gestures Captured
 boolean useSample = false;  // Use sample data for testing
 
 int portNum = 1;  // Port Number to Connect
+
+/*
+
+CONTROLS
+  q - Outputs the data file and quits the program.
+  SPACE - Toggles streaming data
+  p - Saves a screenshot
+  r - Toggles record mode
+  e - Toggles evaulation mode
+  UP - Cycles through gestures
+*/

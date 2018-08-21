@@ -9,24 +9,32 @@ void evaluate(){
   evaluateData();  // Process unknown data
   evalGuess = "Unknown";  // Initialize evalGuess to Unknown
   
-  /* CUSTOM EVALUATION PROGRAM HERE *************************/
+  // CREATE CUSTOM EVALUATION PROGRAM HERE *************************
   
   
+   
   
-  /* END CUSTOM EVALUATION **********************************/
+  /*****************************************************************
   
+  DATA KEY:
+  evalStats[A][B]
+    [A] - Accepts a number between 0 - 4. This represents the "window" or section of data values to look at.
+    [B] - Accepts a number between 0 - 5. This represents the type of statistic you are looking for. They are as follows:
+        0 - Mean of X values
+        1 - Standard Deviation of X values
+        2 - Mean of Y values
+        3 - Standard Deviation of Y values
+        4 - Mean of Z values
+        5 - Standard Deviation of Z values
   
-  /*
+  Evaluation Algorithm Example
+    Use a series of "if" statements to test the value of evalStats[A][B]. 
+    When you reach a terminating branch of the decision tree, set "evalGuess" to the determined gesture
+    For example: 
+      if(evalStats[0][0] <= 395){evalGuess = "Texting";}
+      else{evalGuess = "Nothing";}
   
-  // SAMPLE EVALUATION
-  if(evalStats[0][0] <= 395){
-    evalGuess = "Texting"; 
-  }
-  else{
-    evalGuess = "Nothing"; 
-  }
-  
-  */
+  *****************************************************************/
 }
 
 void evaluateData(){

@@ -2,6 +2,11 @@
 // Zane Cochran
 // Version 1.0
 
+
+/****************************************************************
+  Only change values on the Configuration Tab and Evaluate Tab!
+****************************************************************/
+
 void setup(){
   size(320, 200);
   dataHeader();  // Write Data File Header
